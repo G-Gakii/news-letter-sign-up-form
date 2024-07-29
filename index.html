@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Newsletter sign-up form with success message</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__img">
+        <img
+          class="container__img__mobile"
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt="sign-up img"
+        />
+        <img
+          class="container__img__desktop"
+          src="assets/images/illustration-sign-up-desktop.svg"
+          alt="sign-up img"
+        />
+      </div>
+      <div class="container__content">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form action="/" id="form" novalidate>
+          <div class="about">
+            <label for="email">Email address</label>
+            <span id="error-message" style="color: red; display: none"
+              >valid email required</span
+            >
+          </div>
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+          />
+
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </div>
+    <!-- <div class="response">
+      <img src="assets/images/icon-success.svg" alt="" />
+      <h2>Thanks for subscribing!</h2>
+      <p>
+        A confirmation email has been sent to ash@loremcompany.com. Please open
+        it and click the button inside to confirm your subscription
+      </p>
+      <button>Dismiss message</button>
+    </div> -->
+    <script src="main.js"></script>
+  </body>
+</html>
